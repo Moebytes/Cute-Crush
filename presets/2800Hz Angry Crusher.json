@@ -1,0 +1,17 @@
+{
+  "plugin": "Cute Crush",
+  "version": "1.0.0",
+  "name": "2800Hz Angry Crusher",
+  "author": "Moebytes",
+  "modified": "2026-06-25T21:35:02.708-04:00",
+  "presetFormat": 1,
+  "parameters": {
+    "mix": "100%",
+    "sampleRate": "2894Hz",
+    "bitDepth": "16bit",
+    "crushLFOType": "saw",
+    "crushLFORate": "1/16",
+    "crushLFOAmount": "100%",
+    "crushLFOInvert": "Off"
+  }
+}

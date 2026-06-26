@@ -1,0 +1,17 @@
+{
+  "plugin": "Cute Crush",
+  "version": "1.0.0",
+  "name": "6300Hz Light Crusher",
+  "author": "Moebytes",
+  "modified": "2026-06-25T21:47:31.403-04:00",
+  "presetFormat": 1,
+  "parameters": {
+    "mix": "100%",
+    "sampleRate": "6322Hz",
+    "bitDepth": "16bit",
+    "crushLFOType": "saw",
+    "crushLFORate": "1/2",
+    "crushLFOAmount": "21%",
+    "crushLFOInvert": "On"
+  }
+}

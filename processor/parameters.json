@@ -1,0 +1,9 @@
+{
+    "mix": {"id": "mix", "version": 1},
+    "sampleRate": {"id": "sampleRate", "version": 1},
+    "bitDepth": {"id": "bitDepth", "version": 1},
+    "crushLFOType": {"id": "crushLFOType", "version": 1},
+    "crushLFORate": {"id": "crushLFORate", "version": 1},
+    "crushLFOAmount": {"id": "crushLFOAmount", "version": 1},
+    "crushLFOInvert": {"id": "crushLFOInvert", "version": 1}
+}

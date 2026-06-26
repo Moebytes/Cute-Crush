@@ -1,0 +1,17 @@
+{
+  "plugin": "Cute Crush",
+  "version": "1.0.0",
+  "name": "3600Hz Slow Crusher",
+  "author": "Moebytes",
+  "modified": "2026-06-25T21:41:53.640-04:00",
+  "presetFormat": 1,
+  "parameters": {
+    "mix": "100%",
+    "sampleRate": "3660Hz",
+    "bitDepth": "16bit",
+    "crushLFOType": "sine",
+    "crushLFORate": "2/1",
+    "crushLFOAmount": "60%",
+    "crushLFOInvert": "Off"
+  }
+}

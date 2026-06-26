@@ -1,0 +1,17 @@
+{
+  "plugin": "Cute Crush",
+  "version": "1.0.0",
+  "name": "1-bit Noise",
+  "author": "Moebytes",
+  "modified": "2026-06-25T21:35:48.419-04:00",
+  "presetFormat": 1,
+  "parameters": {
+    "mix": "100%",
+    "sampleRate": "44100Hz",
+    "bitDepth": "1bit",
+    "crushLFOType": "square",
+    "crushLFORate": "1/4",
+    "crushLFOAmount": "0%",
+    "crushLFOInvert": "Off"
+  }
+}

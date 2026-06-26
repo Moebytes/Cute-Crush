@@ -1,0 +1,17 @@
+{
+  "plugin": "Cute Crush",
+  "version": "1.0.0",
+  "name": "3800Hz Crush",
+  "author": "Moebytes",
+  "modified": "2026-06-25T21:27:02.130-04:00",
+  "presetFormat": 1,
+  "parameters": {
+    "mix": "100%",
+    "sampleRate": "3812Hz",
+    "bitDepth": "16bit",
+    "crushLFOType": "square",
+    "crushLFORate": "1/4",
+    "crushLFOAmount": "0%",
+    "crushLFOInvert": "Off"
+  }
+}

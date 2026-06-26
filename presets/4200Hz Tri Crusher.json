@@ -1,0 +1,17 @@
+{
+  "plugin": "Cute Crush",
+  "version": "1.0.0",
+  "name": "4200Hz Tri Crusher",
+  "author": "Moebytes",
+  "modified": "2026-06-25T21:37:57.165-04:00",
+  "presetFormat": 1,
+  "parameters": {
+    "mix": "70%",
+    "sampleRate": "4222Hz",
+    "bitDepth": "16bit",
+    "crushLFOType": "triangle",
+    "crushLFORate": "1/8",
+    "crushLFOAmount": "100%",
+    "crushLFOInvert": "Off"
+  }
+}

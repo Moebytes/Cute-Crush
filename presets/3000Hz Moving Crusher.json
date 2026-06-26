@@ -1,0 +1,17 @@
+{
+  "plugin": "Cute Crush",
+  "version": "1.0.0",
+  "name": "3000Hz Moving Crusher",
+  "author": "Moebytes",
+  "modified": "2026-06-25T21:34:25.445-04:00",
+  "presetFormat": 1,
+  "parameters": {
+    "mix": "100%",
+    "sampleRate": "3016Hz",
+    "bitDepth": "16bit",
+    "crushLFOType": "saw",
+    "crushLFORate": "1/8",
+    "crushLFOAmount": "100%",
+    "crushLFOInvert": "Off"
+  }
+}
