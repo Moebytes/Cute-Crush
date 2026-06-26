@@ -17,9 +17,11 @@ Cute Crush is a VST plugin for sample rate reduction and bitcrushing.
 
 Our design is available here: https://www.figma.com/design/6nkScNIeA7713z3nRbFWUF/Cute-Crush
 
-### Installation
+### Purchase
 
-Download from the [releases](https://github.com/Moebytes/Cute-Crush/releases) tab and rescan the plugins in your DAW.
+<a href="https://moebytes.gumroad.com/l/cute-crush" target="_blank">
+  <img src="assets/gumroad.svg" style="height:60px;"/>
+</a>
 
 ### See Also
 
