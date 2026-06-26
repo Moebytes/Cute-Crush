@@ -15,9 +15,9 @@ auto PresetManager::openPresetMenu([[maybe_unused]] const Array<var>& args,
 
         std::map<int, std::string> items = {
             {1, "Init Preset"},
-            {2, "Randomize Preset"},
-            {3, "Load Preset"},
-            {4, "Save Preset"},
+            {2, "Load Preset"},
+            {3, "Save Preset"},
+            {4, "Randomize Preset"},
             {5, "Add User Folder"}
         };
 
@@ -479,7 +479,7 @@ auto PresetManager::randomizePreset() -> void {
             int index = random.nextInt(choiceParam->choices.size());
             float normalized = choiceParam->convertTo0to1(static_cast<float>(index));
             choiceParam->setValueNotifyingHost(normalized);
-            
+
         } else if (auto* boolParam = dynamic_cast<juce::AudioParameterBool*>(param)) {
             boolParam->setValueNotifyingHost(random.nextBool() ? 1.0f : 0.0f);
         } else {
