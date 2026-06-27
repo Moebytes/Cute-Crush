@@ -11,6 +11,6 @@ namespace BinaryData
     const int           presets_zipSize = 7984;
 
     extern const char*  webview_files_zip;
-    const int           webview_files_zipSize = 3540812;
+    const int           webview_files_zipSize = 3540832;
 
 }

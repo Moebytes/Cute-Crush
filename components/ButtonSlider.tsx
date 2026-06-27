@@ -1,5 +1,5 @@
 import React, {useRef} from "react"
-import withJuceSlider, {WithJUCESliderProps} from "./withJuceSlider"
+import withJuceSkewSlider, {WithJUCESkewSliderProps} from "./withJuceSkewSlider"
 import "./styles/buttonslider.scss"
 
 interface Props {
@@ -8,17 +8,14 @@ interface Props {
     style?: React.CSSProperties
 }
 
-const ButtonSlider: React.FunctionComponent<Props & WithJUCESliderProps> = ({label, parameterID, 
-    style, value, properties, onChange, reset, dragStart, dragEnd}) => {
+const ButtonSlider: React.FunctionComponent<Props & WithJUCESkewSliderProps> = ({label, parameterID, 
+    style, value, properties, onChange, reset, dragStart, dragEnd, denormalizeValue}) => {
     const dragRef = useRef({startX: 0, startY: 0, startValue: value})
+
+    const scaledValue = denormalizeValue(value)
 
     const min = properties.start
     const max = properties.end
-    const step = (max - min) / (properties.numSteps - 1)
-
-    const normalizeValue = (value: number) => Math.log(value / min) / Math.log(max / min)
-
-    const denormalizeValue = (normalized: number) => min * Math.pow(max / min, normalized)
 
     const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
         event.preventDefault()
@@ -35,16 +32,10 @@ const ButtonSlider: React.FunctionComponent<Props & WithJUCESliderProps> = ({lab
             const sensitivity = event.shiftKey ? 20000 : 2000
             const delta = (dx + dy) / sensitivity
 
-            const startNorm = normalizeValue(dragRef.current.startValue)
+            const startNorm = dragRef.current.startValue
+            let normalized = Math.max(0, Math.min(1, startNorm + delta))
 
-            let normalized = startNorm + delta
-            normalized = Math.max(0, Math.min(1, normalized))
-
-            let newValue = denormalizeValue(normalized)
-            newValue = Math.round((newValue - min) / step) * step + min
-            newValue = Math.max(min, Math.min(max, newValue))
-
-            onChange(newValue)
+            onChange(normalized)
         }
 
         const handlePointerUp = () => {
@@ -65,14 +56,14 @@ const ButtonSlider: React.FunctionComponent<Props & WithJUCESliderProps> = ({lab
             <div className="button-slider" onPointerDown={handlePointerDown}>
                 <div className="button-slider-progress">
                     <div className="button-slider-rect" 
-                        style={{width: `${normalizeValue(value) * 100}%`}}/>
+                        style={{width: `${value * 100}%`}}/>
                 </div>
                 <span className="button-slider-value">
-                    {Math.round(value)} Hz
+                    {Math.round(scaledValue)} Hz
                 </span>
             </div>
         </div>
     )
 }
 
-export default withJuceSlider(ButtonSlider)
+export default withJuceSkewSlider(ButtonSlider)
