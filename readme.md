@@ -27,3 +27,4 @@ Our design is available here: https://www.figma.com/design/6nkScNIeA7713z3nRbFWU
 
 - [Cute Gain](https://github.com/Moebytes/Cute-Gain) 
 - [Cute Pitch](https://github.com/Moebytes/Cute-Pitch)
+- [Cute Filter](https://github.com/Moebytes/Cute-Filter)
